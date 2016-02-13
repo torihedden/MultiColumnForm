@@ -32,3 +32,5 @@ submitButton.addEventListener("click", function(){
     console.log(userInputs[i].value);
   }
 });
+
+//addEventListener for border color change on click
