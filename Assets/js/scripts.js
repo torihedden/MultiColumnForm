@@ -19,18 +19,17 @@ var userComment = document.getElementById("comments");
 //an array of all variables
 var userInputs =[firstName, lastName, emailAddress, countryName, biographyContent, phoneNumber, affiliationsName, userOccupation, catName, favGadget, talentType, favDrink, specialPowers, weaponChoice, userComment];
 
-//this targets the whole form
-// var formBody = document.getElementById("whole-form");
-
 //this targets the "submit your data" button at the bottom of the screen
 var submitButton = document.getElementById("submit");
 
 //this prints out the values submitted to the form
 //console.log(the input for each element)
+//then, the form is cleared. all values input are cleared
 submitButton.addEventListener("click", function(){
   for (i=0; i<userInputs.length; i++){
     console.log(userInputs[i].value);
   }
+  for (i=0; i<userInputs.length; i++){
+    userInputs[i].value="";
+  }
 });
-
-//addEventListener for border color change on click
