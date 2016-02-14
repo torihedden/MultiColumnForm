@@ -120,3 +120,11 @@ option {
   border-radius: 2px;
   letter-spacing: 1px;
 }
+
+.white-border {
+  border-color: #fff;
+}
+
+.blue-border {
+  border-color: #10689a;
+}
