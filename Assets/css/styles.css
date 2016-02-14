@@ -23,7 +23,7 @@ input {
   line-height: 1.5;
   margin-left: 30px;
   padding: 5px 10px;
-  height: 60px;
+  font-size: 1.4em;
 }
 
 /*removes default style of blue "blur" on click or tab over all form elements*/
@@ -33,12 +33,12 @@ textarea:focus, input:focus, select:focus {
 
 textarea {
   background: transparent;
-  height: 200px;
+  min-height: 200px;
   border: solid 3px #fff;
   width: 80%;
   margin-left: 30px;
   padding: 5px 10px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 input:click {
@@ -66,39 +66,46 @@ select {
   background: transparent;
   color: white;
   margin-left: 30px;
+  font-size: 1.4em;
 }
 
 option {
   font-size: 1.4em;
 }
 
+/*Each column of the form body*/
+
 .column1 {
-  /*border: solid 1px black;*/
+  border: solid 1px black;
   width: 33%;
-  display: inline-block;
+  display: block;
+  float: left;
   /*margin: 5px 10px;*/
   /*padding: 10px 30px;*/
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 .column2 {
-  /*border: solid 1px black;*/
+  border: solid 1px black;
   width: 33%;
-  display: inline-block;
+  display: block;
+  float: left;
   /*margin: 5px 10px;*/
   /*padding: 10px 30px;*/
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 .column3 {
-  /*border: solid 1px black;*/
+  border: solid 1px black;
   width: 33%;
-  display: inline-block;
+  display: block;
+  float: left;
   /*margin: 5px 10px;*/
   /*padding: 10px 30px;*/
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
+/*Provides a bit of space between the form and the submit button*/
 #submit-button-wrap {
   padding-top: 40px;
 }
