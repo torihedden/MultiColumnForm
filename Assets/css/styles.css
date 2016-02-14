@@ -5,6 +5,7 @@ body, input, select, textarea {
   font-size: 1em;
 }
 
+/* entire page content*/
 .page-content {
   display: block;
   /*border: solid 2px red;*/
@@ -14,6 +15,7 @@ body, input, select, textarea {
   padding-right: 32px;
 }
 
+/*label for each form element*/
 label {
   text-transform: uppercase;
   font-size: 1.1em;
@@ -22,6 +24,7 @@ label {
   letter-spacing: 1px;
 }
 
+/*a text field*/
 input {
   border: solid 3px #fff;
   background: transparent;
@@ -38,6 +41,7 @@ textarea:focus, input:focus, select:focus {
     outline: none;
 }
 
+/*a larger text input area*/
 textarea {
   background: transparent;
   min-height: 200px;
@@ -45,10 +49,6 @@ textarea {
   padding: 5px 10px;
   font-size: 1.4em;
   width: 100%;
-}
-
-input:click {
-  border: solid 3px #10689a;
 }
 
 input::-webkit-input-placeholder {
