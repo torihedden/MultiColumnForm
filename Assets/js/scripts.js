@@ -35,6 +35,7 @@ submitButton.addEventListener("click", function(){
 });
 
 //this targets the text field and text area elements, which have been given a class of "white-border" by default
+//the select elements do not need or get a border color change
 var colorChange = document.getElementsByClassName("white-border");
 
 for (i = 0; i < colorChange.length; i++){
@@ -49,7 +50,6 @@ for (i = 0; i < colorChange.length; i++){
     })
   }())
 };
-
 //dealing with the problem of assigning event listeners to every element in an array
 //the event listener was only applying to the last element in the array (the for loop looped through every element in the array, then applied the className change to the last element, NOT the element that was clicked)
 //was able to base solution off of the discussion found here:
