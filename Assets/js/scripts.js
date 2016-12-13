@@ -17,7 +17,11 @@ var weaponChoice = document.getElementById("weapon");
 var userComment = document.getElementById("comments");
 
 //an array of all variables
-var userInputs =[firstName, lastName, emailAddress, countryName, biographyContent, phoneNumber, affiliationsName, userOccupation, catName, favGadget, talentType, favDrink, specialPowers, weaponChoice, userComment];
+// var userInputs =[firstName, lastName, emailAddress, countryName, biographyContent, phoneNumber, affiliationsName, userOccupation, catName, favGadget, talentType, favDrink, specialPowers, weaponChoice, userComment];
+
+var userInputs =[firstName, lastName, emailAddress];
+
+var inputNames = ["1yourName", "2yourLastName", "3yourEmail"];
 
 //this targets the "submit your data" button at the bottom of the screen
 var submitButton = document.getElementById("submit");
@@ -27,11 +31,14 @@ var submitButton = document.getElementById("submit");
 //then, the form is cleared. all values input are cleared AKA set to an empty string.
 submitButton.addEventListener("click", function(){
   for (i=0; i<userInputs.length; i++){
-    console.log(userInputs[i].value);
+
+    localStorage.setItem(inputNames[i], userInputs[i].value);
+
+    // console.log(userInputs[i].value);
   }
-  for (i=0; i<userInputs.length; i++){
-    userInputs[i].value="";
-  }
+  // for (i=0; i<userInputs.length; i++){
+  //   userInputs[i].value="";
+  // }
 });
 
 //this targets the text field and text area elements, which have been given a class of "white-border" by default
